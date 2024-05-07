@@ -1,0 +1,142 @@
+*:after,*:before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(pexels-andrew-neel-3178786.jpg);
+    background-size: cover;
+    background-position: bottom;
+   
+}
+.background{
+    width:430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(#1845ad,#23a2f6);
+    left: -250px;
+    bottom: -100px;
+}
+.shape:last-child{
+    background: linear-gradient(to right,#ff512f,#f09819);
+    right: -230px;
+    bottom: 430px;
+}
+form{
+    height: 520px;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgb(8, 7, 16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family:monospace;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 42px;
+    text-align: center;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+input{
+    display:block;
+    height:50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+::placeholder{
+    color: #e5e5e59e;
+}
+button{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.473);
+    color: #080710;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    color: #eaf0fb;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.shape1{
+    top: 0;
+    position: absolute;
+    background: #ffffff81;
+    width: 30px;
+    height: 100%;
+    clip-path: polygon(25% 0%,100% 0%,75% 100%,0% 100%);
+    transform: translateX(-170%);
+}
+.btn-primary:hover .shape1{
+    transform: translateX(2400%);
+    transition: transform 0.8s;
+}
+.btn-primary:hover{
+    background-color: red;
+    scale:1.05;
+    transition: all 0.5s;
+}
+/* button:hover,button:focus-within{
+    transition: 0.3s linear;
+    box-shadow: inset -15em 0 0 0 red,inset 15em 0 0 0 red;
+    color: #eaf0fb; this is another type of button transition
+} */
+.social{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.social div{
+    background: red;
+    width: 150px;
+    font-size: larger;
+    font-weight: 900;
+    border-radius: 3px;
+    padding: 10px 5px;
+    color: #eaf0fb;
+    text-align: center;
+}
+.social div:hover{
+    background-color: rgba(255, 255, 255, 0.47);
+}
